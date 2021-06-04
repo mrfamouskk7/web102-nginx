@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Newsily</title>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/fontawesome.min.css" integrity="sha512-OdEXQYCOldjqUEsuMKsZRj93Ht23QRlhIb8E/X0sbwZhme8eUw6g8q7AdxGJKakcBbv7+/PX0Gc2btf7Ru8cZA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pattaya&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mate+SC&family=Newsreader&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+</head>
+<body> 
+  
+    <nav class="navbar navbar-light">
+      <a class="navbar-brand" href="#" style="color: white; font-weight: 1000;color: yellow;"><i class="fa fa-newspaper"style="color: red;"></i>  Newsily</a>
+      <form class="form-inline">
+        <input size="40" class="form-control mr-sm-2" id="mySearch" onkeyup="searchFunction()" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+    <div id="cat"><h1>Categories</h1></div>
+  <div class="container col-md-12">
+    <button class="button" value="business" onclick="category(this.value); load();">Business</button>
+    <button class="button" value="entertainment" onclick="category(this.value); load();">Entertainment</button>
+    <button class="button" value="general" onclick="category(this.value); load();">General</button>
+    <button class="button" value="health" onclick="category(this.value); load();">Health</button>
+    <button class="button" value="science" onclick="category(this.value); load();">Science</button>
+    <button class="button" value="sports" onclick="category(this.value); load();">Sports</button>
+    <button class="button" value="technology" onclick="category(this.value); load();">Technology</button>
+  </div>
+  <div id="cat"><h1>Countries</h1></div>
+  <div class="container col-md-12">
+    <button class="button" value="in" onclick="category(this.value); load();">India</button>
+    <button class="button" value="us" onclick="category(this.value); load();">USA</button>
+    <button class="button" value="ae" onclick="category(this.value); load();">UAE</button>
+    <button class="button" value="ar" onclick="category(this.value); load();">Argentina</button>
+    <button class="button" value="at" onclick="category(this.value); load();">Austria</button>
+    <button class="button" value="au" onclick="category(this.value); load();">Australia</button>
+    <button class="button" value="be" onclick="category(this.value); load();">Belgium</button>
+    <button class="button" value="bg" onclick="category(this.value); load();">Bulgaria</button>
+    <button class="button" value="br" onclick="category(this.value); load();">Brazil</button>
+    <button class="button" value="ca" onclick="category(this.value); load();">Canada</button>
+    <button class="button" value="ch" onclick="category(this.value); load();">Switzerland</button>
+    <button class="button" value="co" onclick="category(this.value); load();">Columbia</button>
+    <button class="button" value="cu" onclick="category(this.value); load();">Cuba</button>
+    <button class="button" value="jp" onclick="category(this.value); load();">Japan</button>
+  </div>
+  <div id="top"><h1>Top Headlines</h1></div>
+  <div id="loader" class="center"></div>
+    <ul id="main" class="cards">
+      
+    </ul>
+    <script src="./index.js"></script>
+</body>
+</html>
